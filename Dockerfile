@@ -1,3 +1,3 @@
 FROM surrealdb/surrealdb:latest
 
-ENTRYPOINT ["/surreal", "start"]
+ENTRYPOINT ["/surreal", "start", "--user", "root", "--pass", "root", "memory"]
