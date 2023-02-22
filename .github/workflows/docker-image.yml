@@ -1,8 +1,11 @@
-name: Build and push image
+name: Build & Release
 
 on:
   push:
     branches: ["main"]
+
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
 

@@ -1,5 +1,7 @@
 # surrealdb-service-docker
 
+[![Build and push image](https://github.com/ri-nat/surrealdb-service-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/ri-nat/surrealdb-service-docker/actions/workflows/docker-image.yml)
+
 ```text
 WARNING!
 WARNING! This image is not intended to be used in any production or staging environment!
@@ -32,3 +34,19 @@ jobs:
         DATABASE_URL: surrealdb://root:root@localhost:8000/test/test
       run: ...
 ```
+
+## Some facts
+
+* Image is built and pushed to [Docker Hub] at 12:00 AM UTC every day.
+* We're building on top of the `latest` tag of the original SurrealDB image.
+* There is only `latest` tag for this image for now.
+
+[Docker Hub]: https://hub.docker.com/repository/docker/rinatshay/surrealdb-service
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at <https://github.com/ri-nat/surrealdb-service-docker>.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](./LICENSE).
